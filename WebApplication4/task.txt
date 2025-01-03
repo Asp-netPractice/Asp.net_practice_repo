@@ -1,0 +1,61 @@
+﻿
+step 1: 
+	1. install mysql.data.entityframework from nuget pacakage manager 
+	2. create connection string in webconfig file from sql connection 
+<connectionStrings>
+    <add name="dbconnection" connectionString="Data Source=Soumalya;Integrated Security=true;Initial Catalog=MySampleDB" providerName="System.Data.SqlClient" />
+</connectionStrings>
+
+	name = "connection name "
+	connectionString :
+				Data Source :- connection source
+				Initial Catalog :- database name 
+
+step2 :- create a registration page 
+	1. add new web_form (normal or with master) 
+	2. create register html template and add onclick on button 
+	3. in backend code 
+		1. add imp packages like(using System.Configuration;
+				for mysql use ---- using MySql.Data.MySqlClient;
+				for mssql use ----- using System.Data.SqlClient;
+			for message box import System.Windows;
+		code to create connection :-
+
+						"
+						 string connectionString = ConfigurationManager.ConnectionStrings["give connection string name given in webconfig"].ConnectionString;
+
+						 string query/qry = "select * from user where email = @value and pass = @value2";------- create a querry variable 
+
+						 after create connection string and querry make connection with the database 
+
+						 for mysql ---->  using (MySqlConnection connection = new MySqlConnection(connectionString)){};
+						 fro mssql ----->  SqlConnection con = new SqlConnection(connectionString);
+
+						    for mysql --->connection.Open();
+							fro mssql ---> con.Open();
+
+						 SqlCommand cmd = new SqlCommand(qry, con);
+						SqlDataReader sdr = cmd.ExecuteReader();
+						if (sdr.read()){
+							connection is ok 
+						}
+						else{
+							invalid
+						}
+
+						note:- always use try catch block while creating and adding and fetching data from the databse 
+
+						"
+
+					What is IsPostBack?
+						IsPostBack is a property of the Page class that indicates whether the page is being requested for the first time (a fresh request) or as a result of a form submission (a postback).
+
+						IsPostBack = false: The page is being loaded for the first time (this is the initial page load).
+						IsPostBack = true: The page is being loaded due to a postback (a form submission or user action like clicking a button).
+
+
+
+
+	task :- create login , create registration page , add registration data to database 
+	       create dashboard with logout button having user email as session token 
+				and the should content "hello "user email id "" [logout button]
