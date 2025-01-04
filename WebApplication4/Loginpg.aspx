@@ -20,19 +20,7 @@
                 </div>
                 <asp:Button runat="server" CssClass="btn btn-primary w-100" Text="Submit" OnClick="Unnamed_Click" />
              <a href="WebForm2.aspx" runat="server">New user</a>
-      
-
-
-
-
-
-<<<<<<< HEAD
-=======
-
-
-
-
->>>>>>> e13e8b3e6a601d748e3664c3edc5221b40a024d5
+     
         </div>
     </div>
 </div>
