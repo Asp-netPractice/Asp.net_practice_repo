@@ -10,10 +10,10 @@ using System.Windows;
 
 namespace WebApplication4
 {
-    public partial class WebForm1 : System.Web.UI.Page
+    public partial class Loginpg : System.Web.UI.Page
     {
         string connectionString = ConfigurationManager.ConnectionStrings["dbconnection"].ConnectionString;
-
+        string query = "SELECT Count(1) FROM UserData where Email=@Emailid AND pass=@Password";
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -23,11 +23,27 @@ namespace WebApplication4
         {
             try
             {
+                string username = email_id.Value;
+                string password = pwd.Value;
                 SqlConnection con = new SqlConnection(connectionString);
                 con.Open();
-                MessageBox.Show("connection is ok");
+               SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("Emailid", username);
+                cmd.Parameters.AddWithValue("Password", password);   
+                int usercount=Convert.ToInt32 (cmd.ExecuteScalar());
+                if (usercount > 0)
+                {
 
+                    Session["username"] = username;
+                    Response.Redirect("DashGopalk.aspx",false);
+                    
+                }
+                else
+                {
+                    MessageBox.Show("Invalid username or password.");
+                }
             }
+
             catch (Exception ex)
             { 
                 Console.WriteLine(ex.Message);

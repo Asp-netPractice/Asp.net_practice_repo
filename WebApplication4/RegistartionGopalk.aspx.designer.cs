@@ -11,7 +11,7 @@ namespace WebApplication4
 {
 
 
-    public partial class WebForm2
+    public partial class RegistartionGopalk
     {
 
         /// <summary>
@@ -33,15 +33,6 @@ namespace WebApplication4
         protected global::System.Web.UI.HtmlControls.HtmlInputText Text1;
 
         /// <summary>
-        /// pass control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputPassword pass;
-
-        /// <summary>
         /// email_id control.
         /// </summary>
         /// <remarks>
@@ -49,5 +40,14 @@ namespace WebApplication4
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl email_id;
+
+        /// <summary>
+        /// pass control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword pass;
     }
 }

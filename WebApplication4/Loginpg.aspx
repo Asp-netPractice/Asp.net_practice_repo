@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Loginpg.aspx.cs" Inherits="WebApplication4.WebForm1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Loginpg.aspx.cs" Inherits="WebApplication4.Loginpg" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="d-flex justify-content-center align-items-center vh-50">
     <div class="card shadow-lg">
@@ -8,7 +8,7 @@
                 <div class="mb-3">
                     <label for="email_id" class="form-label">Email address</label>
                     <input type="email" runat="server" id="email_id" class="form-control" aria-describedby="emailHelp" />
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                   
                 </div>
                 <div class="mb-3">
                     <label for="pwd" class="form-label">Password</label>
@@ -19,7 +19,7 @@
                     <label class="form-check-label" for="exampleCheck1">Check me out</label>
                 </div>
                 <asp:Button runat="server" CssClass="btn btn-primary w-100" Text="Submit" OnClick="Unnamed_Click" />
-             <a href="WebForm2.aspx" runat="server">New user</a>
+             <a href="RegistartionGopalk.aspx" runat="server">New user</a>
         </div>
     </div>
 </div>
