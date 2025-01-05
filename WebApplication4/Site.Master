@@ -50,7 +50,8 @@
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/About">About</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contact</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Loginpg">Login</a></li>
-
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/LoginNayan">LoginNayan</a></li>
+                          <li class="nav-item"><a class="nav-link" runat="server" href="~/RegisterpgNayan">RegisterNayan</a></li>
 
                   
                     </ul>
