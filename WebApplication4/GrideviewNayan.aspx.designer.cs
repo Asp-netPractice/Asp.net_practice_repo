@@ -11,34 +11,25 @@ namespace WebApplication4
 {
 
 
-    public partial class Loginpg
+    public partial class GrideviewNayan
     {
 
         /// <summary>
-        /// email_id control.
+        /// GridView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl email_id;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
 
         /// <summary>
-        /// pwd control.
+        /// GridView2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputPassword pwd;
-
-        /// <summary>
-        /// exampleCheck1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox exampleCheck1;
+        protected global::System.Web.UI.WebControls.GridView GridView2;
     }
 }

@@ -183,10 +183,13 @@
     <Content Include="Content\Site.css" />
     <Content Include="Dashboard.aspx" />
     <Content Include="DashboardNayan.aspx" />
+    <Content Include="DashGopalk.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="GrideviewNayan.aspx" />
     <Content Include="LoginNayan.aspx" />
+    <Content Include="NayanGrideView2.aspx" />
     <Content Include="RegisterpgNayan.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -217,7 +220,7 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="Loginpg.aspx" />
-    <Content Include="WebForm2.aspx" />
+    <Content Include="RegistartionGopalk.aspx" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -283,6 +286,13 @@
     <Compile Include="DashboardNayan.aspx.designer.cs">
       <DependentUpon>DashboardNayan.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DashGopalk.aspx.cs">
+      <DependentUpon>DashGopalk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashGopalk.aspx.designer.cs">
+      <DependentUpon>DashGopalk.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -293,12 +303,26 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="GrideviewNayan.aspx.cs">
+      <DependentUpon>GrideviewNayan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GrideviewNayan.aspx.designer.cs">
+      <DependentUpon>GrideviewNayan.aspx</DependentUpon>
+    </Compile>
     <Compile Include="LoginNayan.aspx.cs">
       <DependentUpon>LoginNayan.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="LoginNayan.aspx.designer.cs">
       <DependentUpon>LoginNayan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NayanGrideView2.aspx.cs">
+      <DependentUpon>NayanGrideView2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NayanGrideView2.aspx.designer.cs">
+      <DependentUpon>NayanGrideView2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegisterpgNayan.aspx.cs">
@@ -336,12 +360,12 @@
     <Compile Include="Loginpg.aspx.designer.cs">
       <DependentUpon>Loginpg.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm2.aspx.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
+    <Compile Include="RegistartionGopalk.aspx.cs">
+      <DependentUpon>RegistartionGopalk.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm2.aspx.designer.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
+    <Compile Include="RegistartionGopalk.aspx.designer.cs">
+      <DependentUpon>RegistartionGopalk.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -361,6 +385,9 @@
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />

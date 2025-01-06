@@ -11,34 +11,52 @@ namespace WebApplication4
 {
 
 
-    public partial class Loginpg
+    public partial class DashGopalk
     {
 
         /// <summary>
-        /// email_id control.
+        /// litUsername control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl email_id;
+        protected global::System.Web.UI.WebControls.Literal litUsername;
 
         /// <summary>
-        /// pwd control.
+        /// stdname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputPassword pwd;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText stdname;
 
         /// <summary>
-        /// exampleCheck1 control.
+        /// rollno control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox exampleCheck1;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText rollno;
+
+        /// <summary>
+        /// marks control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText marks;
+
+        /// <summary>
+        /// subject control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText subject;
     }
 }
