@@ -1,9 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Loginpg.aspx.cs" Inherits="WebApplication4.Loginpg" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="d-flex justify-content-center align-items-center vh-50">
+    <div class="d-flex justify-content-center align-items-center vh-700">
     <div class="card shadow-lg">
         <div class="card-body">
-            <h3 class="card-title text-center mb-4">Login</h3>
+            <h3 class="card-title text-center mb-6">Login</h3>
          
                 <div class="mb-3">
                     <label for="email_id" class="form-label">Email address</label>
