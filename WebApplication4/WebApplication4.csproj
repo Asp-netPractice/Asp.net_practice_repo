@@ -187,6 +187,7 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="GrideviewNayan.aspx" />
     <Content Include="LoginNayan.aspx" />
     <Content Include="RegisterpgNayan.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -300,6 +301,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GrideviewNayan.aspx.cs">
+      <DependentUpon>GrideviewNayan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GrideviewNayan.aspx.designer.cs">
+      <DependentUpon>GrideviewNayan.aspx</DependentUpon>
     </Compile>
     <Compile Include="LoginNayan.aspx.cs">
       <DependentUpon>LoginNayan.aspx</DependentUpon>
