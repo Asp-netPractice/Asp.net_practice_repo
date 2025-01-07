@@ -14,7 +14,7 @@ namespace WebApplication4
     public partial class NayanGrideView2 : System.Web.UI.Page
     {
         string connectionString = ConfigurationManager.ConnectionStrings["dbconnectionNayan"].ConnectionString;
-        string query = "select * from User_Table;";
+        string query = "select * from User_Table";
         protected void Page_Load(object sender, EventArgs e)
         {
             GrideBind();
