@@ -52,6 +52,44 @@ namespace WebApplication4
 
         }
 
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int selectedindex = GridView1.SelectedIndex;
+            if (selectedindex != -1) {
+                string userid = GridView1.SelectedRow.Cells[0].Text;
+                string username = GridView1.SelectedRow.Cells[1].Text;
+                string useremail = GridView1.SelectedRow.Cells[2].Text;
+                MessageBox.Show("" + userid+" "+username+" "+useremail);
+            }
 
+                      
+        }
+
+        protected void GridView2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            GridViewRow selectedrow = GridView2.SelectedRow;
+            //if (selectedindex != -1)
+            //{
+            //    string userid = GridView2.SelectedRow.Cells[0].Text;
+            //    string username = GridView2.SelectedRow.Cells[1].Text;
+            //    string useremail = GridView2.SelectedRow.Cells[2].Text;
+            //    MessageBox.Show("" + userid + " " + username + " " + useremail);
+            //}
+            if (selectedrow != null) {
+                Literal userid = (Literal)selectedrow.FindControl("LiteralUserId");
+                Literal usernameee = (Literal)selectedrow.FindControl("LiteralUsername");
+                Literal useremaill = (Literal)selectedrow.FindControl("LiteralUseremail");
+
+                if (userid != null && usernameee != null && useremaill!= null)
+                {
+                    string useriiid = Convert.ToString(userid.Text.Trim());
+                    string username1 = Convert.ToString(usernameee.Text.Trim());
+                    string useremail1 = Convert.ToString(useremaill.Text.Trim());
+                    MessageBox.Show("" + useriiid + " " + username1 + " " + useremail1);
+                }
+                
+            }
+            
+        }
     }
 }
