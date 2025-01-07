@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 using System.Configuration;
-using System.Data.SqlClient;
-using System.Windows;
 using System.Data;
+using System.Data.SqlClient;
+using System.Web.UI.WebControls;
+using System.Windows;
 
 namespace WebApplication4
 {
@@ -39,7 +35,8 @@ namespace WebApplication4
 
                 if (dataSet.Tables.Count > 0)
                 {
-                    if (dataSet.Tables[0].Rows.Count > 0) {
+                    if (dataSet.Tables[0].Rows.Count > 0)
+                    {
 
                         GridView1.DataSource = dataSet.Tables[0];
                         GridView1.DataBind();
@@ -50,10 +47,11 @@ namespace WebApplication4
 
                 }
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
 
                 MessageBox.Show(ex.Message);
-            
+
             }
 
 
@@ -80,7 +78,7 @@ namespace WebApplication4
                         conn.Close();
                         BindGrideView();
                     }
-                        
+
                 }
             }
             catch (Exception ex)
@@ -89,6 +87,6 @@ namespace WebApplication4
                 MessageBox.Show(ex.Message);
             }
 
-            }
         }
     }
+}

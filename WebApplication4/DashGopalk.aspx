@@ -11,7 +11,7 @@
            
 
         </div>
-        <asp:Button type="button" runat="server" class="align-items-sm-end py-2 px-0 px-lg-2 " Text="Logout" OnClick="Unnamed_Click" ></asp:Button>
+        <asp:Button type="button" runat="server" class="btn btn-primary w-100 " Text="Logout" OnClick="Unnamed_Click" ></asp:Button>
     
                     <h3 class="card-title text-center mb-4">Student data</h3>
 

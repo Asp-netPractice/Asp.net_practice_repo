@@ -55,7 +55,7 @@ namespace WebApplication4
                     int RowsrowsAffected = Command.ExecuteNonQuery();
                     if (RowsrowsAffected > 0)
                     {
-                        MessageBox.Show(" row affected");
+                        MessageBox.Show(" Data entered succesfully");
                     }
                     else {
                         MessageBox.Show("no row affected");
