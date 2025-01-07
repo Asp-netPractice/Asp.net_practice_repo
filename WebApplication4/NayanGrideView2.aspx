@@ -10,12 +10,13 @@
 <body>
     <form id="form1" runat="server">
         <div class="container mt-5">
-            <asp:GridView ID="GridView1" runat="server" CssClass="table table-bordered border-primary  table-hover" AutoGenerateColumns="False">
+            <asp:GridView ID="GridView1" runat="server" CssClass="table table-bordered border-primary  table-hover" AutoGenerateColumns="False" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
                 <Columns>
                     <asp:BoundField DataField="User_id" HeaderText="User Id" />
                     <asp:BoundField DataField="usrname" HeaderText="User Name" />
                     <asp:BoundField DataField="email" HeaderText="User Email" />
-                </Columns>
+                    <asp:ButtonField CommandName="Select" Text="Select" ShowHeader="True" HeaderText="Select "></asp:ButtonField>
+                    </Columns>
 
             </asp:GridView>
 
@@ -24,25 +25,32 @@
         </div>
 
         <div class="container mt-3">
-            <asp:GridView ID="GridView2" runat="server" CssClass="table table-bordered border-primary  table-hover" AutoGenerateColumns="False">
+            <asp:GridView ID="GridView2" runat="server" CssClass="table table-bordered border-primary  table-hover" AutoGenerateColumns="False" OnSelectedIndexChanged="GridView2_SelectedIndexChanged">
                 <Columns>
                     <asp:TemplateField HeaderText ="User Id">
 
-                        <ItemTemplate ><%# Eval("User_id") %></ItemTemplate>
+                        <ItemTemplate >
+                            <asp:Literal ID="LiteralUserId" runat="server" Text='<%# Eval("User_id") %>'></asp:Literal>
+                </ItemTemplate>
 
                     </asp:TemplateField>
 
                     <asp:TemplateField HeaderText="User Name">
 
-                        <ItemTemplate><%# Eval("usrname") %></ItemTemplate>
+                        <ItemTemplate>
+                             <asp:Literal ID="LiteralUsername" runat="server" Text='<%# Eval("usrname") %>'></asp:Literal>
+                          </ItemTemplate>
 
                     </asp:TemplateField>
 
                     <asp:TemplateField HeaderText="User Email ID">
 
-                        <ItemTemplate><%# Eval("email") %></ItemTemplate>
+                        <ItemTemplate>
+                             <asp:Literal ID="LiteralUseremail" runat="server" Text='<%# Eval("email") %>'></asp:Literal>
+                          </ItemTemplate>
 
                     </asp:TemplateField>
+                    <asp:ButtonField CommandName="Select" Text="Select" ButtonType="Button" ShowHeader="True" HeaderText="Select"></asp:ButtonField>
                 </Columns>
 
             </asp:GridView>
